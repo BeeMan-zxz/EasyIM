@@ -1,0 +1,8 @@
+D:\My\EasyIM\ClientUser\ClientUser\bin\Debug\ClientUser.exe.config
+D:\My\EasyIM\ClientUser\ClientUser\bin\Debug\ClientUser.exe
+D:\My\EasyIM\ClientUser\ClientUser\bin\Debug\ClientUser.pdb
+D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.csprojResolveAssemblyReference.cache
+D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.ClientUserForms.resources
+D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.csproj.GenerateResource.Cache
+D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.exe
+D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.pdb
