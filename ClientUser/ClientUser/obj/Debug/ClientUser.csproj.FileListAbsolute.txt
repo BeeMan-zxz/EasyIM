@@ -6,3 +6,6 @@ D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.ClientUserForms.resource
 D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.csproj.GenerateResource.Cache
 D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.exe
 D:\My\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.pdb
+D:\项目\EasyIM\ClientUser\ClientUser\bin\Debug\ClientUser.exe.config
+D:\项目\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.exe
+D:\项目\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.pdb

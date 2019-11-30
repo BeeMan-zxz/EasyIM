@@ -16,5 +16,11 @@ namespace ClientUser
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            LoginForms form = new LoginForms();
+
+        }
     }
 }
