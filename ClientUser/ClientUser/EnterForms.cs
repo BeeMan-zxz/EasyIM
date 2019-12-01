@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClientUser.Model;
 
 namespace ClientUser
 {
@@ -20,7 +21,7 @@ namespace ClientUser
         private void btnLogin_Click(object sender, EventArgs e)
         {
             LoginForms form = new LoginForms();
-
+            form.ShowDialog();
         }
     }
 }

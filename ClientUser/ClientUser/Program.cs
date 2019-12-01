@@ -11,6 +11,7 @@ namespace ClientUser
         static void Main(string[] args)
         {
             EnterForms form = new EnterForms();
+            form.ShowDialog();
         }
     }
 }

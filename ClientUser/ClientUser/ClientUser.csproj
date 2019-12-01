@@ -32,14 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dos.Common">
-      <HintPath>..\..\..\..\工具安装包\工具安装包\Dos.ORM\Dos.ORM\Dos.ORM\.Net4.0\Dos.Common.dll</HintPath>
-    </Reference>
     <Reference Include="Dos.ORM">
-      <HintPath>..\..\..\..\工具安装包\工具安装包\Dos.ORM\Dos.ORM\Dos.ORM\.Net4.0\Dos.ORM.dll</HintPath>
+      <HintPath>..\..\..\..\..\autoDesk\ZFGKDotNET\Dos.ORM\.Net4.0\Dos.ORM.dll</HintPath>
     </Reference>
     <Reference Include="Dos.ORM.Sqlite">
-      <HintPath>..\..\..\..\工具安装包\工具安装包\Dos.ORM\Dos.ORM\Dos.ORM\.Net4.0\Dos.ORM.Sqlite.dll</HintPath>
+      <HintPath>..\..\..\..\..\autoDesk\ZFGKDotNET\Dos.ORM\.Net4.0\Dos.ORM.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,7 +55,7 @@
     <Compile Include="ClientUserForms.Designer.cs">
       <DependentUpon>ClientUserForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Database\DB.cs" />
+    <Compile Include="DB.cs" />
     <Compile Include="EnterForms.cs">
       <SubType>Form</SubType>
     </Compile>
