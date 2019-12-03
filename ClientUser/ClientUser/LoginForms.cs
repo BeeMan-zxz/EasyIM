@@ -82,15 +82,11 @@ namespace ClientUser
             }
             if (rdobtnNan.Checked)
             {
-                m_User.Sex = BitConverter.GetBytes(1);
+                m_User.Sex = 1;
             }
             else if (rdobtnGirl.Checked)
             {
-                m_User.Sex = BitConverter.GetBytes(0);
-            }
-            else
-            {
-                m_User.Sex = null;
+                m_User.Sex = 0;
             }
             if (txtTowPassword.Text == txtTowPasswordAgn.Text)
             {
@@ -106,6 +102,10 @@ namespace ClientUser
 
             if (us.Count == 0)
             {
+                if (m_User.Password == null || m_User.PasswordTow == null)
+                {
+                    MessageBox.Show("请输入标准密码和标准密保且保证两次输入的一致！", "消息");
+                }
                 DB.Context.Insert<User>(m_User);
                 MessageBox.Show("恭喜您，已经注册成功！", "消息");
                 this.Close();

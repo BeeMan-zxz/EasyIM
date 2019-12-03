@@ -23,5 +23,10 @@ namespace ClientUser
             LoginForms form = new LoginForms();
             form.ShowDialog();
         }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

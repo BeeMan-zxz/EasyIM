@@ -21,94 +21,122 @@ namespace ClientUser.Model
     public partial class User : Entity
     {
         #region Model
-		private int _ID;
-		private string _Name;
-		private byte[] _Sex;
-		private string _Password;
-		private string _PasswordTow;
-		private string _Data;
+        private int _ID;
+        private int _UserId;
+        private string _Name;
+        private string _Password;
+        private string _TowPassword;
+        private int? _Sex;
+        private int? _Age;
+        private string _Data;
 
-		/// <summary>
-		/// 
-		/// </summary>
-		[Field("ID")]
-		public int ID
-		{
-			get{ return _ID; }
-			set
-			{
-				this.OnPropertyValueChange("ID");
-				this._ID = value;
-			}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		[Field("Name")]
-		public string Name
-		{
-			get{ return _Name; }
-			set
-			{
-				this.OnPropertyValueChange("Name");
-				this._Name = value;
-			}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		[Field("Sex")]
-		public byte[] Sex
-		{
-			get{ return _Sex; }
-			set
-			{
-				this.OnPropertyValueChange("Sex");
-				this._Sex = value;
-			}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		[Field("Password")]
-		public string Password
-		{
-			get{ return _Password; }
-			set
-			{
-				this.OnPropertyValueChange("Password");
-				this._Password = value;
-			}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		[Field("PasswordTow")]
-		public string PasswordTow
-		{
-			get{ return _PasswordTow; }
-			set
-			{
-				this.OnPropertyValueChange("PasswordTow");
-				this._PasswordTow = value;
-			}
-		}
-		/// <summary>
-		/// 
-		/// </summary>
-		[Field("Data")]
-		public string Data
-		{
-			get{ return _Data; }
-			set
-			{
-				this.OnPropertyValueChange("Data");
-				this._Data = value;
-			}
-		}
-		#endregion
+        /// <summary>
+        /// 
+        /// </summary>
+        [Field("ID")]
+        public int ID
+        {
+            get { return _ID; }
+            set
+            {
+                this.OnPropertyValueChange("ID");
+                this._ID = value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [Field("UserId")]
+        public int UserId
+        {
+            get { return _UserId; }
+            set
+            {
+                this.OnPropertyValueChange("UserId");
+                this._UserId = value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [Field("Name")]
+        public string Name
+        {
+            get { return _Name; }
+            set
+            {
+                this.OnPropertyValueChange("Name");
+                this._Name = value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [Field("Password")]
+        public string Password
+        {
+            get { return _Password; }
+            set
+            {
+                this.OnPropertyValueChange("Password");
+                this._Password = value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [Field("TowPassword")]
+        public string TowPassword
+        {
+            get { return _TowPassword; }
+            set
+            {
+                this.OnPropertyValueChange("TowPassword");
+                this._TowPassword = value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [Field("Sex")]
+        public int? Sex
+        {
+            get { return _Sex; }
+            set
+            {
+                this.OnPropertyValueChange("Sex");
+                this._Sex = value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [Field("Age")]
+        public int? Age
+        {
+            get { return _Age; }
+            set
+            {
+                this.OnPropertyValueChange("Age");
+                this._Age = value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [Field("Data")]
+        public string Data
+        {
+            get { return _Data; }
+            set
+            {
+                this.OnPropertyValueChange("Data");
+                this._Data = value;
+            }
+        }
+        #endregion
 
-		#region Method
+        #region Method
         /// <summary>
         /// 获取实体中的主键列
         /// </summary>
@@ -118,7 +146,7 @@ namespace ClientUser.Model
 				_.ID,
 			};
         }
-		/// <summary>
+        /// <summary>
         /// 获取实体中的标识列
         /// </summary>
         public override Field GetIdentityField()
@@ -132,10 +160,12 @@ namespace ClientUser.Model
         {
             return new Field[] {
 				_.ID,
+				_.UserId,
 				_.Name,
-				_.Sex,
 				_.Password,
-				_.PasswordTow,
+				_.TowPassword,
+				_.Sex,
+				_.Age,
 				_.Data,
 			};
         }
@@ -146,10 +176,12 @@ namespace ClientUser.Model
         {
             return new object[] {
 				this._ID,
+				this._UserId,
 				this._Name,
-				this._Sex,
 				this._Password,
-				this._PasswordTow,
+				this._TowPassword,
+				this._Sex,
+				this._Age,
 				this._Data,
 			};
         }
@@ -163,41 +195,49 @@ namespace ClientUser.Model
         }
         #endregion
 
-		#region _Field
+        #region _Field
         /// <summary>
         /// 字段信息
         /// </summary>
         public class _
         {
-			/// <summary>
-			/// * 
-			/// </summary>
-			public readonly static Field All = new Field("*", "User");
             /// <summary>
-			/// 
-			/// </summary>
-			public readonly static Field ID = new Field("ID", "User", "");
+            /// * 
+            /// </summary>
+            public readonly static Field All = new Field("*", "User");
             /// <summary>
-			/// 
-			/// </summary>
-			public readonly static Field Name = new Field("Name", "User", "");
+            /// 
+            /// </summary>
+            public readonly static Field ID = new Field("ID", "User", "");
             /// <summary>
-			/// 
-			/// </summary>
-			public readonly static Field Sex = new Field("Sex", "User", "");
+            /// 
+            /// </summary>
+            public readonly static Field UserId = new Field("UserId", "User", "");
             /// <summary>
-			/// 
-			/// </summary>
-			public readonly static Field Password = new Field("Password", "User", "");
+            /// 
+            /// </summary>
+            public readonly static Field Name = new Field("Name", "User", "");
             /// <summary>
-			/// 
-			/// </summary>
-			public readonly static Field PasswordTow = new Field("PasswordTow", "User", "");
+            /// 
+            /// </summary>
+            public readonly static Field Password = new Field("Password", "User", "");
             /// <summary>
-			/// 
-			/// </summary>
-			public readonly static Field Data = new Field("Data", "User", "");
+            /// 
+            /// </summary>
+            public readonly static Field TowPassword = new Field("TowPassword", "User", "");
+            /// <summary>
+            /// 
+            /// </summary>
+            public readonly static Field Sex = new Field("Sex", "User", "");
+            /// <summary>
+            /// 
+            /// </summary>
+            public readonly static Field Age = new Field("Age", "User", "");
+            /// <summary>
+            /// 
+            /// </summary>
+            public readonly static Field Data = new Field("Data", "User", "");
         }
         #endregion
-	}
+    }
 }
