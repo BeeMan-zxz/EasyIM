@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using ClientUser.Database;
 using ClientUser.Model;
 
@@ -98,12 +99,16 @@ namespace ClientUser
             else
             {
                 MessageBox.Show("您两次输入的密保不符，请确认!", "消息");
+                this.Close();
             }
-            User user1 = DB.Context.From<User>().First();
-            MessageBox.Show(user1.ID.ToString(), "消息");
-            if (DB.Context.From<User>().Select(d => d.ID == m_User.ID) == null)
+            m_User.Data = System.DateTime.Now.ToString("yyyy-MM-dd");
+            var us = DB.Context.From<User>().Where(d => d.ID == m_User.ID).ToList();
+
+            if (us.Count == 0)
             {
                 DB.Context.Insert<User>(m_User);
+                MessageBox.Show("恭喜您，已经注册成功！", "消息");
+                this.Close();
             }
             else
             {
