@@ -66,11 +66,11 @@ namespace ClientUser
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (txtID.Text == null || txtName.Text == null || txtTowPassword.Text == null || txtTowPassword.Text == null)
+            if (txtUserID.Text == null || txtName.Text == null || txtTowPassword.Text == null || txtTowPassword.Text == null)
             {
                 MessageBox.Show("请您继续完善信息。", "消息");
             }
-            m_User.ID = int.Parse(txtID.Text);
+            m_User.UserId = int.Parse(txtUserID.Text);
             m_User.Name = txtName.Text;
             if (txtPassword.Text == txtPasswordAgn.Text)
             {
@@ -82,11 +82,11 @@ namespace ClientUser
             }
             if (rdobtnNan.Checked)
             {
-                m_User.Sex = 1;
+                m_User.Sex = "男";
             }
             else if (rdobtnGirl.Checked)
             {
-                m_User.Sex = 0;
+                m_User.Sex = "女";
             }
             if (txtTowPassword.Text == txtTowPasswordAgn.Text)
             {
@@ -98,8 +98,7 @@ namespace ClientUser
                 this.Close();
             }
             m_User.Data = System.DateTime.Now.ToString("yyyy-MM-dd");
-            var us = DB.Context.From<User>().Where(d => d.ID == m_User.ID).ToList();
-
+            var us = DB.Context.From<User>().Where(d => d.UserId == m_User.UserId).ToList();
             if (us.Count == 0)
             {
                 if (m_User.Password == null || m_User.PasswordTow == null)

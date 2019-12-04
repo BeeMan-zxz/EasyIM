@@ -24,10 +24,9 @@ namespace ClientUser.Model
         private int _ID;
         private int _UserId;
         private string _Name;
+        private string _Sex;
         private string _Password;
-        private string _TowPassword;
-        private int? _Sex;
-        private int? _Age;
+        private string _PasswordTow;
         private string _Data;
 
         /// <summary>
@@ -72,6 +71,19 @@ namespace ClientUser.Model
         /// <summary>
         /// 
         /// </summary>
+        [Field("Sex")]
+        public string Sex
+        {
+            get { return _Sex; }
+            set
+            {
+                this.OnPropertyValueChange("Sex");
+                this._Sex = value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
         [Field("Password")]
         public string Password
         {
@@ -85,40 +97,14 @@ namespace ClientUser.Model
         /// <summary>
         /// 
         /// </summary>
-        [Field("TowPassword")]
-        public string TowPassword
+        [Field("PasswordTow")]
+        public string PasswordTow
         {
-            get { return _TowPassword; }
+            get { return _PasswordTow; }
             set
             {
-                this.OnPropertyValueChange("TowPassword");
-                this._TowPassword = value;
-            }
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        [Field("Sex")]
-        public int? Sex
-        {
-            get { return _Sex; }
-            set
-            {
-                this.OnPropertyValueChange("Sex");
-                this._Sex = value;
-            }
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        [Field("Age")]
-        public int? Age
-        {
-            get { return _Age; }
-            set
-            {
-                this.OnPropertyValueChange("Age");
-                this._Age = value;
+                this.OnPropertyValueChange("PasswordTow");
+                this._PasswordTow = value;
             }
         }
         /// <summary>
@@ -162,10 +148,9 @@ namespace ClientUser.Model
 				_.ID,
 				_.UserId,
 				_.Name,
-				_.Password,
-				_.TowPassword,
 				_.Sex,
-				_.Age,
+				_.Password,
+				_.PasswordTow,
 				_.Data,
 			};
         }
@@ -178,10 +163,9 @@ namespace ClientUser.Model
 				this._ID,
 				this._UserId,
 				this._Name,
-				this._Password,
-				this._TowPassword,
 				this._Sex,
-				this._Age,
+				this._Password,
+				this._PasswordTow,
 				this._Data,
 			};
         }
@@ -220,19 +204,15 @@ namespace ClientUser.Model
             /// <summary>
             /// 
             /// </summary>
-            public readonly static Field Password = new Field("Password", "User", "");
-            /// <summary>
-            /// 
-            /// </summary>
-            public readonly static Field TowPassword = new Field("TowPassword", "User", "");
-            /// <summary>
-            /// 
-            /// </summary>
             public readonly static Field Sex = new Field("Sex", "User", "");
             /// <summary>
             /// 
             /// </summary>
-            public readonly static Field Age = new Field("Age", "User", "");
+            public readonly static Field Password = new Field("Password", "User", "");
+            /// <summary>
+            /// 
+            /// </summary>
+            public readonly static Field PasswordTow = new Field("PasswordTow", "User", "");
             /// <summary>
             /// 
             /// </summary>

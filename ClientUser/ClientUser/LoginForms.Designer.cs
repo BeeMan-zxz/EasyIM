@@ -34,7 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtUserID = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtTowPassword = new System.Windows.Forms.TextBox();
@@ -50,7 +50,7 @@
             // btnOK
             // 
             this.btnOK.Location = new System.Drawing.Point(67, 188);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(56, 27);
             this.btnOK.TabIndex = 9;
@@ -113,19 +113,19 @@
             this.label5.Text = "二级密保：";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txtID
+            // txtUserID
             // 
-            this.txtID.Location = new System.Drawing.Point(67, 8);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(174, 21);
-            this.txtID.TabIndex = 1;
-            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
+            this.txtUserID.Location = new System.Drawing.Point(67, 8);
+            this.txtUserID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(174, 21);
+            this.txtUserID.TabIndex = 1;
+            this.txtUserID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(67, 33);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(174, 21);
@@ -135,7 +135,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(67, 82);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(174, 21);
             this.txtName.TabIndex = 4;
@@ -144,7 +144,7 @@
             // txtTowPassword
             // 
             this.txtTowPassword.Location = new System.Drawing.Point(67, 129);
-            this.txtTowPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTowPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtTowPassword.Name = "txtTowPassword";
             this.txtTowPassword.PasswordChar = '*';
             this.txtTowPassword.Size = new System.Drawing.Size(174, 21);
@@ -154,7 +154,7 @@
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(181, 188);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(56, 27);
             this.btnClose.TabIndex = 10;
@@ -176,7 +176,7 @@
             // txtPasswordAgn
             // 
             this.txtPasswordAgn.Location = new System.Drawing.Point(67, 57);
-            this.txtPasswordAgn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPasswordAgn.Margin = new System.Windows.Forms.Padding(2);
             this.txtPasswordAgn.Name = "txtPasswordAgn";
             this.txtPasswordAgn.PasswordChar = '*';
             this.txtPasswordAgn.Size = new System.Drawing.Size(174, 21);
@@ -239,7 +239,7 @@
             this.Controls.Add(this.txtPasswordAgn);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtUserID);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
@@ -264,7 +264,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtUserID;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtTowPassword;
