@@ -30,7 +30,7 @@
         {
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtUserID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnEnter = new System.Windows.Forms.Button();
@@ -56,12 +56,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "用户名：";
             // 
-            // txtID
+            // txtUserID
             // 
-            this.txtID.Location = new System.Drawing.Point(71, 12);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(227, 21);
-            this.txtID.TabIndex = 2;
+            this.txtUserID.Location = new System.Drawing.Point(71, 12);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(227, 21);
+            this.txtUserID.TabIndex = 2;
             // 
             // label2
             // 
@@ -106,7 +106,7 @@
             this.ClientSize = new System.Drawing.Size(316, 102);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtUserID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEditPassword);
             this.Controls.Add(this.btnEnter);
@@ -122,7 +122,7 @@
 
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtUserID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnEnter;

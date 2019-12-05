@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangePasswordForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordForms.Designer.cs">
+      <DependentUpon>ChangePasswordForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientUserForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,12 @@
       <DependentUpon>ClientUserForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\DB.cs" />
+    <Compile Include="EditPasswordForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPasswordForms.Designer.cs">
+      <DependentUpon>EditPasswordForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="EnterForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,8 +92,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ChangePasswordForms.resx">
+      <DependentUpon>ChangePasswordForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientUserForms.resx">
       <DependentUpon>ClientUserForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPasswordForms.resx">
+      <DependentUpon>EditPasswordForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EnterForms.resx">
       <DependentUpon>EnterForms.cs</DependentUpon>
