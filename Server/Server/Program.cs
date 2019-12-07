@@ -11,8 +11,6 @@ namespace Server
         static void Main(string[] args)
         {
             ServerStartForms form = new ServerStartForms();
-            ServerControl server = new ServerControl();
-            form.m_server = server;
             form.ShowDialog();
         }
     }

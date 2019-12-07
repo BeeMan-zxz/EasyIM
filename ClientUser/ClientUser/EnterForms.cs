@@ -32,6 +32,8 @@ namespace ClientUser
             if (user1 != null && user1.Password == txtPassword.Text)
             {
                 //登录聊天界面
+                ClientControl client = new ClientControl();
+                client.Connect("127.0.0.1",10);
                 ClientUserForms form = new ClientUserForms();
                 form.ShowDialog();
             }

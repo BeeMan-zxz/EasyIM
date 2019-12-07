@@ -6,3 +6,12 @@ D:\My\EasyIM\Server\Server\obj\Debug\Server.exe
 D:\My\EasyIM\Server\Server\obj\Debug\Server.pdb
 D:\My\EasyIM\Server\Server\obj\Debug\Server.ServerStartForms.resources
 D:\My\EasyIM\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Server.exe.config
+D:\My\EasyIM\EasyIM\Server\Server\obj\Debug\Server.exe
+D:\My\EasyIM\EasyIM\Server\Server\obj\Debug\Server.pdb
+D:\My\EasyIM\EasyIM\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\My\EasyIM\EasyIM\Server\Server\obj\Debug\Server.ServerStartForms.resources
+D:\My\EasyIM\EasyIM\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Server.exe
+D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Server.pdb
+D:\My\EasyIM\EasyIM\Server\Server\obj\Debug\Server.ClientCondationForms.resources

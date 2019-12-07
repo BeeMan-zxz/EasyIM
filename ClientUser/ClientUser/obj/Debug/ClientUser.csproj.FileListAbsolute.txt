@@ -28,3 +28,5 @@ D:\My\EasyIM\EasyIM\ClientUser\ClientUser\bin\Debug\System.Data.SQLite.xml
 D:\My\EasyIM\EasyIM\ClientUser\ClientUser\bin\Debug\Dos.ORM.Sqlite.dll
 D:\My\EasyIM\EasyIM\ClientUser\ClientUser\bin\Debug\Dos.ORM.Sqlite.pdb
 D:\My\EasyIM\EasyIM\ClientUser\ClientUser\bin\Debug\Dos.ORM.Sqlite.xml
+D:\My\EasyIM\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.ChangePasswordForms.resources
+D:\My\EasyIM\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.EditPasswordForms.resources

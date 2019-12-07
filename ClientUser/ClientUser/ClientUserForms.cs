@@ -16,5 +16,15 @@ namespace ClientUser
         {
             InitializeComponent();
         }
+
+        private void libFriend_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClientUserForms_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

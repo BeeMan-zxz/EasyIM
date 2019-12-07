@@ -59,6 +59,7 @@
     <Compile Include="ChangePasswordForms.Designer.cs">
       <DependentUpon>ChangePasswordForms.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientControl.cs" />
     <Compile Include="ClientUserForms.cs">
       <SubType>Form</SubType>
     </Compile>
