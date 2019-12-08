@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dos.ORM">
+      <HintPath>..\..\..\..\..\Autodesk\ZFGKDotNET\Dos.ORM\.Net4.0\Dos.ORM.dll</HintPath>
+    </Reference>
+    <Reference Include="Dos.ORM.Sqlite">
+      <HintPath>..\..\..\..\..\Autodesk\ZFGKDotNET\Dos.ORM\.Net4.0\Dos.ORM.Sqlite.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\..\Autodesk\ZFGKDotNET\SQLite.NET-1.0.110.0\sqlite-netFx40-binary-bundle-Win32-2010-1.0.111.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -41,6 +50,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="User">
+      <HintPath>..\User\bin\Debug\User.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientCondationForms.cs">
@@ -49,6 +61,7 @@
     <Compile Include="ClientCondationForms.Designer.cs">
       <DependentUpon>ClientCondationForms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database\DB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServerControl.cs" />

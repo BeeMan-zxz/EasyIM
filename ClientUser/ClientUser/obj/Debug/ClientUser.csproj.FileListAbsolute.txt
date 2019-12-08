@@ -30,3 +30,5 @@ D:\My\EasyIM\EasyIM\ClientUser\ClientUser\bin\Debug\Dos.ORM.Sqlite.pdb
 D:\My\EasyIM\EasyIM\ClientUser\ClientUser\bin\Debug\Dos.ORM.Sqlite.xml
 D:\My\EasyIM\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.ChangePasswordForms.resources
 D:\My\EasyIM\EasyIM\ClientUser\ClientUser\obj\Debug\ClientUser.EditPasswordForms.resources
+D:\My\EasyIM\EasyIM\ClientUser\ClientUser\bin\Debug\User.dll
+D:\My\EasyIM\EasyIM\ClientUser\ClientUser\bin\Debug\User.pdb

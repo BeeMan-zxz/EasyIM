@@ -20,7 +20,9 @@ namespace Server
             serverSocket = new Socket(AddressFamily.InterNetwork,SocketType.Stream, ProtocolType.Tcp);
             sockets  = new List<Socket>();
         }
-
+        /// <summary>
+        /// 服务器启动方法
+        /// </summary>
         public void Start()
         {
             IPEndPoint localEP = new IPEndPoint(IPAddress.Any, 10);
@@ -28,19 +30,13 @@ namespace Server
             serverSocket.Listen(10);
             ClientCondationForms form = new ClientCondationForms(serverSocket);
             form.ShowDialog();
-            ////Thread rhThreadAccpet = new Thread(Accept);
-            ////rhThreadAccpet.IsBackground = true;
-            ////rhThreadAccpet.Start();Socket client = serverSocket.Accept();
-            //Socket client = serverSocket.Accept();
-            //IPEndPoint point = client.RemoteEndPoint as IPEndPoint;
-            //string s = point.Address + "【" + point.Port + "】" + DateTime.Now.ToString() + "\n";
-            //form.GetClientCondition(s);
-            ////form.SetMyTextBoxValue(point.Address + "【" + point.Port + "】" + DateTime.Now.ToString() + "\n");
-            ////MessageBox.Show(s, "消息");
         }
-
+        /// <summary>
+        /// 服务器断开
+        /// </summary>
         public void Close()
         {
+            serverSocket.Close();
             //serverSocket.Close();
             //this.Close();   //只是关闭当前窗口，若不是主窗体的话，是无法退出程序的，另外若有托管线程（非主线程），也无法干净地退出；
             //Application.Exit();  //强制所有消息中止，退出所有的窗体，但是若有托管线程（非主线程），也无法干净地退出；

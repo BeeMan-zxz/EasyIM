@@ -33,7 +33,7 @@ namespace ClientUser
             {
                 //登录聊天界面
                 ClientControl client = new ClientControl();
-                client.Connect("127.0.0.1",10);
+                client.Connect("127.0.0.1",10,user1);
                 ClientUserForms form = new ClientUserForms();
                 form.ShowDialog();
             }
