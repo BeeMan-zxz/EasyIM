@@ -18,11 +18,7 @@ D:\My\EasyIM\EasyIM\Server\Server\obj\Debug\Server.ClientCondationForms.resource
 D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Dos.ORM.dll
 D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Dos.ORM.Sqlite.dll
 D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\System.Data.SQLite.dll
-D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Dos.ORM.pdb
-D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Dos.ORM.xml
-D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Dos.ORM.Sqlite.pdb
-D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\Dos.ORM.Sqlite.xml
 D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\System.Data.SQLite.pdb
 D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\System.Data.SQLite.xml
-D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\User.dll
-D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\User.pdb
+D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\EasyIMDll.dll
+D:\My\EasyIM\EasyIM\Server\Server\bin\Debug\EasyIMDll.pdb

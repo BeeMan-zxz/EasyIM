@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{94B5A118-E7A9-43EE-AE46-400AAB1DD3F5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{5C3F15B3-D49D-4600-86D5-35D13A936CE2}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Server</RootNamespace>
-    <AssemblyName>Server</AssemblyName>
+    <RootNamespace>EasyIMDll</RootNamespace>
+    <AssemblyName>EasyIMDll</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,22 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dos.ORM, Version=1.16.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.dll</HintPath>
+    <Reference Include="Dos.ORM">
+      <HintPath>..\..\..\Autodesk\ZFGKDotNET\Dos.ORM\.Net4.0\Dos.ORM.dll</HintPath>
     </Reference>
-    <Reference Include="Dos.ORM.Sqlite, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.Sqlite.dll</HintPath>
-    </Reference>
-    <Reference Include="EasyIMDll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\EasyIMDll\EasyIMDll\bin\Debug\EasyIMDll.dll</HintPath>
+    <Reference Include="Dos.ORM.Sqlite">
+      <HintPath>..\..\..\Autodesk\ZFGKDotNET\Dos.ORM\.Net4.0\Dos.ORM.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,32 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientCondationForms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientCondationForms.Designer.cs">
-      <DependentUpon>ClientCondationForms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="AnalyticalTool.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServerControl.cs" />
-    <Compile Include="ServerStartForms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ServerStartForms.Designer.cs">
-      <DependentUpon>ServerStartForms.cs</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="ClientCondationForms.resx">
-      <DependentUpon>ClientCondationForms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ServerStartForms.resx">
-      <DependentUpon>ServerStartForms.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

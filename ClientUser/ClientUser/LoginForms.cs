@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using ClientUser.Database;
 using ClientUser.Model;
+using User = ClientUser.Model.User;
 
 namespace ClientUser
 {

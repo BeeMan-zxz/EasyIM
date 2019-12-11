@@ -36,8 +36,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Autodesk\ZFGKDotNET\Dos.ORM\.Net4.0\Dos.ORM.dll</HintPath>
     </Reference>
-    <Reference Include="Dos.ORM.Sqlite">
-      <HintPath>..\..\..\..\..\Autodesk\ZFGKDotNET\Dos.ORM\.Net4.0\Dos.ORM.Sqlite.dll</HintPath>
+    <Reference Include="Dos.ORM.Sqlite, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyIMDll">
+      <HintPath>..\..\EasyIMDll\EasyIMDll\bin\Debug\EasyIMDll.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -85,7 +89,6 @@
     <Compile Include="LoginForms.Designer.cs">
       <DependentUpon>LoginForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

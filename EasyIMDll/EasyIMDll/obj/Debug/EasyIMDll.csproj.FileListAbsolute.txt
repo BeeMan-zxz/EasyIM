@@ -1,0 +1,15 @@
+D:\My\EasyIMDll\EasyIMDll\bin\Debug\EasyIMDll.dll
+D:\My\EasyIMDll\EasyIMDll\bin\Debug\EasyIMDll.pdb
+D:\My\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.dll
+D:\My\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.Sqlite.dll
+D:\My\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.pdb
+D:\My\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.xml
+D:\My\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.Sqlite.pdb
+D:\My\EasyIMDll\EasyIMDll\bin\Debug\Dos.ORM.Sqlite.xml
+D:\My\EasyIMDll\EasyIMDll\obj\Debug\EasyIMDll.dll
+D:\My\EasyIMDll\EasyIMDll\obj\Debug\EasyIMDll.pdb
+D:\My\EasyIM\EasyIM\EasyIMDll\EasyIMDll\bin\Debug\EasyIMDll.dll
+D:\My\EasyIM\EasyIM\EasyIMDll\EasyIMDll\bin\Debug\EasyIMDll.pdb
+D:\My\EasyIM\EasyIM\EasyIMDll\EasyIMDll\obj\Debug\EasyIMDll.dll
+D:\My\EasyIM\EasyIM\EasyIMDll\EasyIMDll\obj\Debug\EasyIMDll.pdb
+D:\My\EasyIM\EasyIM\EasyIMDll\EasyIMDll\obj\Debug\EasyIMDll.csprojResolveAssemblyReference.cache
